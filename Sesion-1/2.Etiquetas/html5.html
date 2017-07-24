@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Mi página web</title>
+    <style>
+    table,
+    th,
+    td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        font-family: sans-serif;
+        font-size: 12px;
+        border-spacing: 5px;
+    }
+    </style>
+</head>
+
+<body>
+    <h3 style="text-align: center;">Tabla en HTML</h3>
+    <table style="width: 100%;">
+        <tr>
+            <th>Nombre</th>
+            <th colspan="2">Apellido</th>
+        </tr>
+        <tr>
+            <td>Juan</td>
+            <td>Pérez</td>
+            <td>Ramirez</td>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td colspan="2">Hernández</td>
+        </tr>
+    </table>
+    <table style="width:100%; margin: 20px 0px 10px 0px;">
+        <tr>
+            <th>Nombre:</th>
+            <td>Juan Pérez</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Teléfono:</th>
+            <td>55577854</td>
+        </tr>
+        <tr>
+            <td>55577855</td>
+        </tr>
+    </table>
+</body>
+
+</html>
