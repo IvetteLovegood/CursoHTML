@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Mi página web</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style type="text/css">
+
+    /*Internal CSS*/
+    body {
+        margin: 0;
+        font-family: sans-serif;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: #333333;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    li {
+        float: left;
+        padding: 10px;
+        color: white;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 16px;
+        text-decoration: none;
+    }
+
+    div.ciudad {
+        background-color: black;
+        color: white;
+        margin: 20px 0 20px 0;
+        padding: 20px;
+        font-family: sans-serif;
+        height: 500px;
+    }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="#londres">Londres</a></li>
+        <li><a href="#paris">Paris</a></li>
+        <li><a href="#tokyo">Tokyo</a></li>
+    </ul>
+    <div class="ciudad" id="londres">
+        <!-- Inline CSS -->
+        <h2 style="text-align: center;">Londres</h2>
+        <p>Londres es la capital de Inglaterra. Es la ciudad más poblada del Reino Unido.</p>
+    </div>
+    <div class="ciudad" id="paris">
+        <h2>Paris</h2>
+        <p>París es la capital y ciudad más popular de Francia.</p>
+    </div>
+    <div class="ciudad" id="tokyo">
+        <h2>Tokyo</h2>
+        <p>Tokyo es la capital de Japón localizada en el centro-este de la isla de Honshu, concretamente en la región de Kanto. </p>
+    </div>
+</body>
+
+</html>
