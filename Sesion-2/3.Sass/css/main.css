@@ -1,0 +1,25 @@
+body {
+  background: #fff;
+  font-family: Arial, sans-serif; }
+
+a {
+  color: #FF851B;
+  font-size: 20px; }
+
+h1 {
+  color: #FF851B;
+  font-size: 20px; }
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  nav ul li {
+    display: inline-block; }
+    nav ul li a {
+      padding: 6px 12px;
+      text-decoration: none; }
+      nav ul li a:hover {
+        color: #01579b; }
+
+/*# sourceMappingURL=main.css.map */
