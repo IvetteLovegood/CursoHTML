@@ -1,0 +1,31 @@
+SCSS - Syntax
+====================
+
+body {
+	background:blue;
+}
+
+.articulo {
+  font-size: 20px;
+  color: #000;
+
+  .cabecera {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
+
+SASS - Syntax
+
+====================
+
+body
+	background: blue
+
+.articulo 
+  font-size: 20px
+  color: #000
+
+  .cabecera
+    font-weight: bold
+    text-transform: uppercase
