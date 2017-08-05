@@ -1,11 +1,11 @@
 @import _variables
+@import _mixins
 
 body
 	background: #fff
 	font-family: $font-family
 
 a
-	color: $naranja
 	font-size: $font-size
 
 h1
@@ -13,17 +13,22 @@ h1
 	font-size: $font-size
 
 nav
+	background: #000
+	+border-radius(10px)
 	ul
 		margin: 0
 		padding: 0
 		list-style: none
 		li
 			display: inline-block
+			+boton
 			a
 				padding: 6px 12px
 				text-decoration: none
 				&:hover
 					color: #01579b
+				&:visited
+					color: $white
 
 @media only screen and (min-width: 768px)
 	.col-1 

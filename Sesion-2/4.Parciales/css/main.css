@@ -3,24 +3,36 @@ body {
   font-family: Arial, sans-serif; }
 
 a {
-  color: #FF851B;
   font-size: 20px; }
 
 h1 {
   color: #FF851B;
   font-size: 20px; }
 
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none; }
-  nav ul li {
-    display: inline-block; }
-    nav ul li a {
-      padding: 6px 12px;
-      text-decoration: none; }
-      nav ul li a:hover {
-        color: #01579b; }
+nav {
+  background: #000;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px; }
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    nav ul li {
+      display: inline-block;
+      font-size: 24px;
+      padding: 0.5em 0.8em;
+      border: none;
+      cursor: pointer;
+      color: #fff; }
+      nav ul li a {
+        padding: 6px 12px;
+        text-decoration: none; }
+        nav ul li a:hover {
+          color: #01579b; }
+        nav ul li a:visited {
+          color: #fff; }
 
 @media only screen and (min-width: 768px) {
   .col-1 {
