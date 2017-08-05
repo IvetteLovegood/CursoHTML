@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Geolocalizacion</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <p id="localizacion"></p>
+    <section class="center">
+        <button onclick="getLocation()">Localizame</button>
+    </section>
+</body>
+<script>
+var parrafo = document.getElementById("localizacion");
+
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else {
+        parrafo.innerHTML = "La Geolocalización no es soportada por este navegador.";
+    }
+}
+
+function showPosition(position) {
+    parrafo.innerHTML = "Latitude: " + position.coords.latitude +
+        "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+
+</html>

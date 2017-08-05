@@ -1,3 +1,18 @@
+.message, .success, .error, .warning {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+  margin: 10px; }
+
+.success {
+  border-color: green; }
+
+.error {
+  border-color: red; }
+
+.warning {
+  border-color: yellow; }
+
 body {
   background: #fff;
   font-family: Arial, sans-serif; }
@@ -8,6 +23,15 @@ a {
 h1 {
   color: #FF851B;
   font-size: 20px; }
+
+h2 {
+  width: 20px;
+  width: 30px;
+  width: 12px; }
+
+h3:after {
+  content: "HolaMundo";
+  font-family: Arial,sans-serif; }
 
 nav {
   background: #000;

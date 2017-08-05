@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+
+<head>
+    <meta charset="UTF-8">
+    <title>LocalStorage</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <p id="resultado"></p>
+</body>
+<script>
+// Compatibilidad
+if (typeof(Storage) !== "undefined") {
+    // Almacenamos
+    localStorage.setItem("name", "Juan");
+    //Eliminamos 
+    //localStorage.removeItem("name");
+    // Obtenemos
+    document.getElementById("resultado").innerHTML = localStorage.getItem("name");
+} else {
+    document.getElementById("resultado").innerHTML = "Tu navegador no soporta el WebStorage";
+}
+</script>
+
+</html>

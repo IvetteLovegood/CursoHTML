@@ -1,5 +1,6 @@
 @import _variables
 @import _mixins
+@import _mesagges
 
 body
 	background: #fff
@@ -11,6 +12,14 @@ a
 h1
 	color: $naranja
 	font-size: $font-size
+
+h2
+	width: 3px * 5 + 5px // 20px
+	width: 3 * (5px + 5px) // 30px
+	width: 3px + (6px / 2) * 3 // 12px
+
+h3
+	+string-concat
 
 nav
 	background: #000

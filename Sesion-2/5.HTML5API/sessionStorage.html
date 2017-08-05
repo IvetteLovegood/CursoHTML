@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+
+<head>
+    <meta charset="UTF-8">
+    <title>LocalStorage</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <p>
+        <button onclick="clickCounter()" type="button">Contar</button>
+    </p>
+    <p id="result"></p>
+    <p>Click en el boton para incrementar</p>
+</body>
+<script>
+function clickCounter() {
+    if (typeof(Storage) !== "undefined") {
+        if (sessionStorage.clickcount) {
+            sessionStorage.clickcount = Number(sessionStorage.clickcount) + 1;
+        } else {
+            sessionStorage.clickcount = 1;
+        }
+        document.getElementById("result").innerHTML = "Número de clicks en el boton: " + sessionStorage.clickcount + " en esta sesión";
+    } else {
+        document.getElementById("result").innerHTML = "Tu navegador no soporta sessionStorage";
+    }
+}
+</script>
+
+</html>
