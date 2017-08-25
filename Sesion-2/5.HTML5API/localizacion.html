@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<p id="result"></p>
+	<button onclick="clickCounter()">Localizame</button>
+</body>
+<script>
+function clickCounter () {
+	var parrafo = document.getElementById("result");
+	if (typeof(Storage)!== "undefined" ) {
+		if (sessionStorage.clickcount) {
+			sessionStorage.clickcount = Number(sessionStorage.clickcount) + 1;
+		} else {
+			sessionStorage.clickcount = 1;
+		}
+
+	}}
+</script>
+</html>

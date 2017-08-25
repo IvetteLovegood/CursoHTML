@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<title>Restaurante</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<style>
+body {
+    font-family: "Times New Roman", Georgia, Serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Playfair Display";
+    letter-spacing: 5px;
+}
+</style>
+
+<body>
+    <div class="ly-top">
+        <div class="ly-bar ly-white ly-padding ly-card-2" style="letter-spacing:4px;">
+            <a href="#home" class="ly-bar-item ly-button">Restaurante</a>
+            <div class="ly-right ly-hide-small">
+                <a href="#about" class="ly-bar-item ly-button">Acerca de</a>
+                <a href="#menu" class="ly-bar-item ly-button">Menu</a>
+                <a href="#contact" class="ly-bar-item ly-button">Contacto</a>
+            </div>
+        </div>
+    </div>
+    <header class="ly-display-container ly-content ly-wide" style="max-width:1600px;min-width:500px" id="home">
+        <img class="ly-image" src="hamburger.jpg" alt="Hamburger Catering" width="1600" height="800">
+        <div class="ly-display-bottomleft ly-padding-large ly-opacity">
+            <h1 class="ly-xxlarge">Restaurante Le Catering</h1>
+        </div>
+    </header>
+    <div class="ly-content" style="max-width:1100px">
+        <div class="ly-row ly-padding-64" id="about">
+            <div class="ly-col m6 ly-padding-large ly-hide-small">
+                <img src="tablesetting2.jpg" class="ly-round ly-image ly-opacity-min" alt="Table Setting" width="600" height="750">
+            </div>
+            <div class="ly-col m6 ly-padding-large">
+                <h1 class="ly-center">Acerca de Restaurante Le Catering</h1>
+                <br>
+                <h5 class="ly-center">Tradición desde 1889</h5>
+                <p class="ly-large">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, <span class="ly-tag ly-light-grey">sunt</span> in culpa qui officia deserunt mollit anim id est laborum seasonal ingredients.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="ly-row ly-padding-64" id="menu">
+            <div class="ly-col l6 ly-padding-large">
+                <h1 class="ly-center">Nuestro Menu</h1>
+                <br>
+                <h4>Cesta de Pan</h4>
+                <p class="ly-text-grey">Surtido de panes y muffins frescos de frutas horneadas 5.50</p>
+                <br>
+                <h4>Frutas con granola y miel</h4>
+                <p class="ly-text-grey">Cereales naturales de miel avena tostada, pasas, almendras y dátiles 7.00</p>
+                <br>
+                <h4>Waffle belga</h4>
+                <p class="ly-text-grey">Batido de vainilla con harina de malta 7.50</p>
+                <br>
+                <h4>Huevos revueltos</h4>
+                <p class="ly-text-grey">Huevos revueltos, pimiento rojo asado y ajo, con cebollas verdes 7.50</p>
+                <br>
+                <h4>Panqueques de arándano</h4>
+                <p class="ly-text-grey">Con jarabe, mantequilla y un montón de bayas 8.50</p>
+            </div>
+            <div class="ly-col l6 ly-padding-large">
+                <img src="tablesetting.jpg" class="ly-round ly-image ly-opacity-min" alt="Menu" width="500" height="750">
+            </div>
+        </div>
+        <hr>
+        <div class="ly-container ly-padding-64" id="contact">
+            <h1>Contacto</h1>
+            <br>
+            <p>Ofrecemos servicio completo de catering para cualquier evento, grande o pequeño. Entendemos sus necesidades y vamos a atender la comida para satisfacer los criterios biggerst de todos ellos, tanto mirar y el gusto. No dude en ponerse en contacto con nosotros.</p>
+            <p class="ly-text-blue-grey ly-large"><b>Paseo de la Reforma 300, Juárez, 06600 Ciudad de México, CDMX</b></p>
+            <p>También puede ponerse en contacto con nosotros por teléfono 00553123-2323 o por correo electrónico catering@catering.com, o puede enviarnos un mensaje aquí:</p>
+            <form target="_blank">
+                <p>
+                    <input class="ly-input ly-padding-16" type="text" placeholder="Nombre" required name="Nombre">
+                </p>
+                <p>
+                    <input class="ly-input ly-padding-16" type="number" placeholder="¿Cuánta gente?" required name="¿Cuánta gente?">
+                </p>
+                <p>
+                    <input class="ly-input ly-padding-16" type="datetime-local" placeholder="Fecha y Hora" required name="date" value="2017-11-16T20:00">
+                </p>
+                <p>
+                    <input class="ly-input ly-padding-16" type="text" placeholder="Mensaje / Requerimientos especiales" required name="Message">
+                </p>
+                <p>
+                    <button class="ly-button ly-light-grey ly-section" type="submit">
+                        <element>Enviar Mensaje</element>
+                    </button>
+                </p>
+            </form>
+        </div>
+    </div>
+    <footer class="ly-center ly-light-grey ly-padding-32">
+        <p>By <a href="#" target="_blank" class="ly-hover-text-green">Ivette</a></p>
+    </footer>
+</body>
+
+</html>
